@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MoSaic - Test</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p><h2>사용자 이름별 사진 목록</h2></p>
+        <p>{% if length != 0%}{% for photo in photo_list %}<a href={{url_for("photo_info", index=photo[0])}}><h2>{{photo[1]}}</h2></a>{% endfor %}
+        {% else %}<h3>사진을 등록해주세요</h3>{% endif %}</p>
+    </body>
+</html>
+
